@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Image Slider Flip</title>
+</head>
+<body>
+    <div class="container">
+        <div class="img-box">
+            <img src="./assets/img/photo-1491933382434-500287f9b54b.jpg" alt="">
+        </div>
+        <ul class="img-list">
+            <li class="img-item">
+                <a href="./assets/img/photo-1491933382434-500287f9b54b.jpg" class="img-content" target="img-box">
+                    <img src="./assets/img/photo-1491933382434-500287f9b54b.jpg" alt="" class="img">
+                </a>
+               
+            </li>
+            <li class="img-item">
+                <a href="./assets/img/photo-1542289539-059dea254938.jpg" class="img-content" target="img-box">
+                    <img src="./assets/img/photo-1542289539-059dea254938.jpg" alt="" class="img">
+                </a>
+               
+            </li>
+            <li class="img-item">
+                <a href="./assets/img/photo-1543652437-15ae836b33e3.png" class="img-content" target="img-box">
+                    <img src="./assets/img/photo-1543652437-15ae836b33e3.png" alt="" class="img">
+                </a>
+               
+            </li>
+            <li class="img-item">
+                <a href="./assets/img/photo-1605455699691-abb8c7c8d34a.jpg" class="img-content" target="img-box">
+                    <img src="./assets/img/photo-1605455699691-abb8c7c8d34a.jpg" alt="" class="img">
+                </a>
+                
+            </li>
+            <li class="img-item">
+                <a href="./assets/img/photo-1620562497000-529f7710438c.jpg" class="img-content" target="img-box">
+                    <img src="./assets/img/photo-1620562497000-529f7710438c.jpg" alt="" class="img">
+                </a>
+               
+            </li>
+        </ul>
+        
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script>
+        $(document).ready(function(){
+            $('.img-item a').mousemove(function(e){
+                e.preventDefault();
+                $('.img-box img').attr('src',$(this).attr('href'))
+            })
+        })
+        console.log()
+    </script>
+</body>
+</html>
